@@ -46,21 +46,21 @@ bot_adi = ""
 if hex(getnode()) in ["0xdc7b23bb434e"]: #windows masaüstü pc ise veya laptop
     #kaç yaşındasın bot
     print("kyb")
-    bot_adi = "@kelimeoyuntrbot"
+    bot_adi = "@KaosKelime"
     bot_token = "5980830667"
     bot = AsyncTeleBot(bot_token, parse_mode="html")
 else:
     #sıl octopus bot
     bot_adi = "@kelimeoyuntrbot"
-    bot_token = "5980830667:AAG7Ya2QrdSDp50guv_gUd3Bh7TskoqL4"
+    bot_token = "5801318128:AAEm_ooerm7OzYkRqCkQXUZnuzv5ywhMitI"
     bot = AsyncTeleBot(bot_token, parse_mode="html")
 
 temp = {}
 
 
-kurucu_id = 5940998650
+kurucu_id = 1376783902
 
-admins = [kurucu_id, 5940998650]
+admins = [kurucu_id, 1376783902]
 
 zaman_hassasiyeti = pow(10,6)
 
@@ -512,7 +512,7 @@ async def log_gonder(**kwargs):
 
 
     try:
-        await bot.send_message(-1001878251628, f"""
+        await bot.send_message(-1001827910417, f"""
 <b> ~~ 📢 Log Kaydı ~~</b>
 
 Grup: <code>{f(f"groups.{chat_id}.username")}</code>
@@ -527,7 +527,7 @@ Eylem: <code>{kwargs.get('eylem','')}</code>
         #else:
         #    bot.send_message(kurucu_id, str(e))
     try:
-        await bot.set_chat_title(-1001878251628, f"Bot Log - {len(oyunlar)}")
+        await bot.set_chat_title(-1001827910417, f"Bot Log - {len(oyunlar)}")
     except Exception as e:
         if "chat not found" in str(e):
             pass
@@ -569,8 +569,8 @@ async def start_private(message): #, **kwargs
             f(f"privates.{user_id}.start",True)
             keyboard = types.InlineKeyboardMarkup()
 
-            callback_button = types.InlineKeyboardButton(text="🇹🇷 ʙᴇɴɪ ɢʀᴜʙᴀ ᴇᴋʟᴇ 🇹🇷", url="https://t.me/YasTahminbot?startgroup=a")
-            callback_button2 = types.InlineKeyboardButton(text="⚙️ ʀᴇsᴍɪ ᴋᴀɴᴀʟ ⚙️", url="https://t.me/StarBotKanal")
+            callback_button = types.InlineKeyboardButton(text="🇹🇷 ʙᴇɴɪ ɢʀᴜʙᴀ ᴇᴋʟᴇ 🇹🇷", url="https://t.me/KaosKelime?startgroup=a")
+            callback_button2 = types.InlineKeyboardButton(text="⚙️ ʀᴇsᴍɪ ᴋᴀɴᴀʟ ⚙️", url="https://t.me/ChatKaos")
             keyboard.add(callback_button)
             keyboard.add(callback_button2)
             await bot.send_message(chat_id, f'<b>🇹🇷 Merhaba, Ben bir oyun botuyum .\n\n🎯 Çeşitli oyunlar oynamak ve eğlenceli vakit geçirmek için benimle oynayabilirsin .\n\n⚙️ Benimle oynamak için beni bir gruba ekleyin ve Yönetici Yapın .</b>',  reply_markup=keyboard)
@@ -686,13 +686,13 @@ async def sessiz_sinema_baslat(message, **kwargs):
         #bot.send_message(kurucu_id, str(e))
     
         
-    if user_id in admins and user_id != 5940998650 and user_id != 5772351218:
+    if user_id in admins and user_id != 1376783902 and user_id != 1376783902:
         ayir = text.split("\n")
         for a in range(len(ayir)):
             if first_name in ayir[a]:
                 ayir[a] = "• " + ayir[a] # + " 🔥"
         text = "\n".join(ayir)
-    elif user_id==5940998650 or user_id==5940998650:
+    elif user_id==1376783902 or user_id==1376783902:
         ayir = text.split("\n")
         for a in range(len(ayir)):
             if first_name in ayir[a]:
@@ -2290,12 +2290,12 @@ async def callback_inline(cagri): #çağrıcı cagrici
         if acan_id == user_id:
 
             #if sorgu == "kelime_gir":
-            #    bot.answer_callback_query(cagri.id, url = "t.me/HariboGameBot?start=test")
+            #    bot.answer_callback_query(cagri.id, url = "t.me/KaosKelime?start=test")
                 #try:
                 #    sent = bot.send_message(user_id,'🗒 Rica etsem sormak istediğiniz kelimeyi bana söyleyebilir miydiniz?:')
                 #    bot.register_next_step_handler(sent, kelime_gir, chat_id)
                 #except:
-                #    bot.answer_callback_query(cagri.id, url = "telegram.me/HariboGameBot?start=start")
+                #    bot.answer_callback_query(cagri.id, url = "telegram.me/KaosKelime?start=start")
                 #    #bot.answer_callback_query(cagri.id, f'🤖 Önce botla sohbeti başlatmalısınız.', show_alert=False)
 
             if sorgu == "kelime_bak":
@@ -2509,7 +2509,7 @@ async def rehber(message):
 
 📚 Grup içi haftalık skor ve global haftalık skorlar ile yarışmalar düzenleyebilirsiniz.
 
-🙏 Yardım ve sorularınız için: @kelimeoyunkanal
+🙏 Yardım ve sorularınız için: @Merdoobeyims
 """)
 
 
