@@ -569,7 +569,7 @@ async def start_private(message): #, **kwargs
             f(f"privates.{user_id}.start",True)
             keyboard = types.InlineKeyboardMarkup()
 
-            callback_button = types.InlineKeyboardButton(text="🇹🇷 ʙᴇɴɪ ɢʀᴜʙᴀ ᴇᴋʟᴇ 🇹🇷", url="https://t.me/KaosKelime?startgroup=a")
+            callback_button = types.InlineKeyboardButton(text="🇹🇷 ʙᴇɴɪ ɢʀᴜʙᴀ ᴇᴋʟᴇ 🇹🇷", url="https://t.me/KaosKelime_bot?startgroup=a")
             callback_button2 = types.InlineKeyboardButton(text="⚙️ ʀᴇsᴍɪ ᴋᴀɴᴀʟ ⚙️", url="https://t.me/ChatKaos")
             keyboard.add(callback_button)
             keyboard.add(callback_button2)
