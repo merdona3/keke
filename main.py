@@ -46,13 +46,13 @@ bot_adi = ""
 if hex(getnode()) in ["0xdc7b23bb434e"]: #windows masaüstü pc ise veya laptop
     #kaç yaşındasın bot
     print("kyb")
-    bot_adi = "@KaosKelime"
-    bot_token = "5801318128:AAEm_ooerm7OzYkRqCkQXUZnuzv5ywhMitI"
+    bot_adi = "@KaosGame"
+    bot_token = "5989997185:AAFbGg9uI6LkI-S-4fUutSNB84gDMLnk32k"
     bot = AsyncTeleBot(bot_token, parse_mode="html")
 else:
     #sıl octopus bot
     bot_adi = "@kelimeoyuntrbot"
-    bot_token = "5801318128:AAEm_ooerm7OzYkRqCkQXUZnuzv5ywhMitI"
+    bot_token = "5989997185:AAFbGg9uI6LkI-S-4fUutSNB84gDMLnk32k"
     bot = AsyncTeleBot(bot_token, parse_mode="html")
 
 temp = {}
@@ -569,7 +569,7 @@ async def start_private(message): #, **kwargs
             f(f"privates.{user_id}.start",True)
             keyboard = types.InlineKeyboardMarkup()
 
-            callback_button = types.InlineKeyboardButton(text="🇹🇷 ʙᴇɴɪ ɢʀᴜʙᴀ ᴇᴋʟᴇ 🇹🇷", url="https://t.me/KaosKelime_bot?startgroup=a")
+            callback_button = types.InlineKeyboardButton(text="🇹🇷 ʙᴇɴɪ ɢʀᴜʙᴀ ᴇᴋʟᴇ 🇹🇷", url="https://t.me/KaosGame_bot?startgroup=a")
             callback_button2 = types.InlineKeyboardButton(text="⚙️ ʀᴇsᴍɪ ᴋᴀɴᴀʟ ⚙️", url="https://t.me/ChatKaos")
             keyboard.add(callback_button)
             keyboard.add(callback_button2)
