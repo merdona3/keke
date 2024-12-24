@@ -41,26 +41,26 @@ import requests
 #warnings.filterwarnings("ignore")
 
 
-bot_adi = ""
+bot_adi = "ɢᴀʏᴇ ᴋᴇʟɪᴍᴇ 🫶"
 
 if hex(getnode()) in ["0xdc7b23bb434e"]: #windows masaüstü pc ise veya laptop
     #kaç yaşındasın bot
     print("kyb")
-    bot_adi = "@KaosGame"
-    bot_token = "5989997185:AAFbGg9uI6LkI-S-4fUutSNB84gDMLnk32k"
+    bot_adi = "@Gaye_KelimeBot"
+    bot_token = "7265921453:AAGHOgQT_3-I3vvkbUsGqBp7aRnmnvyZ2m8"
     bot = AsyncTeleBot(bot_token, parse_mode="html")
 else:
     #sıl octopus bot
-    bot_adi = "@kelimeoyuntrbot"
-    bot_token = "5989997185:AAFbGg9uI6LkI-S-4fUutSNB84gDMLnk32k"
+    bot_adi = "@Gaye_KelimeBot"
+    bot_token = "7265921453:AAGHOgQT_3-I3vvkbUsGqBp7aRnmnvyZ2m8"
     bot = AsyncTeleBot(bot_token, parse_mode="html")
 
 temp = {}
 
 
-kurucu_id = 1376783902
+kurucu_id = 7092148989
 
-admins = [kurucu_id, 1376783902]
+admins = [kurucu_id, 7187375734]
 
 zaman_hassasiyeti = pow(10,6)
 
@@ -512,7 +512,7 @@ async def log_gonder(**kwargs):
 
 
     try:
-        await bot.send_message(-1001827910417, f"""
+        await bot.send_message(-1002243530183, f"""
 <b> ~~ 📢 Log Kaydı ~~</b>
 
 Grup: <code>{f(f"groups.{chat_id}.username")}</code>
@@ -527,7 +527,7 @@ Eylem: <code>{kwargs.get('eylem','')}</code>
         #else:
         #    bot.send_message(kurucu_id, str(e))
     try:
-        await bot.set_chat_title(-1001827910417, f"Bot Log - {len(oyunlar)}")
+        await bot.set_chat_title(--1002243530183, f"Bot Log - {len(oyunlar)}")
     except Exception as e:
         if "chat not found" in str(e):
             pass
@@ -569,7 +569,7 @@ async def start_private(message): #, **kwargs
             f(f"privates.{user_id}.start",True)
             keyboard = types.InlineKeyboardMarkup()
 
-            callback_button = types.InlineKeyboardButton(text="🇹🇷 ʙᴇɴɪ ɢʀᴜʙᴀ ᴇᴋʟᴇ 🇹🇷", url="https://t.me/KaosGame_bot?startgroup=a")
+            callback_button = types.InlineKeyboardButton(text="🇹🇷 ʙᴇɴɪ ɢʀᴜʙᴀ ᴇᴋʟᴇ 🇹🇷", url="https://t.me/Gaye_KelimeBot?startgroup=a")
             callback_button2 = types.InlineKeyboardButton(text="⚙️ ʀᴇsᴍɪ ᴋᴀɴᴀʟ ⚙️", url="https://t.me/ChatKaos")
             keyboard.add(callback_button)
             keyboard.add(callback_button2)
@@ -2509,7 +2509,7 @@ async def rehber(message):
 
 📚 Grup içi haftalık skor ve global haftalık skorlar ile yarışmalar düzenleyebilirsiniz.
 
-🙏 Yardım ve sorularınız için: @Merdoobeyims
+🙏 Yardım ve sorularınız için: @Merdobey
 """)
 
 
