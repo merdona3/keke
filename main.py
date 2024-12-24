@@ -41,18 +41,18 @@ import requests
 #warnings.filterwarnings("ignore")
 
 
-bot_adi = "ɢᴀʏᴇ ᴋᴇʟɪᴍᴇ 🫶"
+bot_adi = ""
 
 if hex(getnode()) in ["0xdc7b23bb434e"]: #windows masaüstü pc ise veya laptop
     #kaç yaşındasın bot
     print("kyb")
     bot_adi = "@Gaye_KelimeBot"
-    bot_token = "7265921453:AAGHOgQT_3-I3vvkbUsGqBp7aRnmnvyZ2m8"
+    bot_token = "7557773843:AAHc0Sc3SBl-kTHn_a_obA7iTjhLEWtIoCw"
     bot = AsyncTeleBot(bot_token, parse_mode="html")
 else:
     #sıl octopus bot
     bot_adi = "@Gaye_KelimeBot"
-    bot_token = "7265921453:AAGHOgQT_3-I3vvkbUsGqBp7aRnmnvyZ2m8"
+    bot_token = "7557773843:AAHc0Sc3SBl-kTHn_a_obA7iTjhLEWtIoCw"
     bot = AsyncTeleBot(bot_token, parse_mode="html")
 
 temp = {}
